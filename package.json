@@ -1,0 +1,20 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "This is the playgroud for every js tutorial starter...",
+  "main": "index.js",
+  "repository": "git@github.com:kkkkkxiaofei/playground.git",
+  "author": "Xiaofei <xifzhang@thoughtworks.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha --compilers js:babel-register --require ./testHelper.js ./tests/**/*.spec.js"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "webpack": "^3.7.1"
+  }
+}
