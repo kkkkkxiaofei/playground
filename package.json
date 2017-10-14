@@ -7,7 +7,8 @@
   "author": "Xiaofei <xifzhang@thoughtworks.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
+    "build": "webpack",
+    "start": "yarn build && node ./dist/app.js",
     "test": "mocha --compilers js:babel-register --require ./testHelper.js ./tests/**/*.spec.js"
   },
   "devDependencies": {
