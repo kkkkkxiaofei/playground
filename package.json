@@ -9,7 +9,7 @@
   "scripts": {
     "build": "webpack",
     "start": "yarn build && node ./dist/app.js",
-    "test": "mocha --compilers js:babel-register --require ./testHelper.js --recursive tests",
+    "test": "mocha --compilers js:babel-register --require ./testHelper.js --recursive ./src/tests",
     "lint": "eslint ./src --fix"
   },
   "devDependencies": {

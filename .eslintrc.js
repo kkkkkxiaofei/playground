@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "node": true,
-        "es6": true
+        "es6": true,
+        "mocha": true
     },
     "parserOptions": {
         "sourceType": "module"
@@ -17,5 +18,8 @@ module.exports = {
             "single"
         ],
         "no-console": 0
+    },
+    "globals": {
+        "expect": true
     }
 };
