@@ -9,7 +9,8 @@
   "scripts": {
     "build": "webpack",
     "start": "yarn build && node ./dist/app.js",
-    "test": "mocha --compilers js:babel-register --require ./testHelper.js --recursive tests"
+    "test": "mocha --compilers js:babel-register --require ./testHelper.js --recursive tests",
+    "lint": "eslint ./src --fix"
   },
   "devDependencies": {
     "babel-loader": "^7.1.2",
@@ -18,10 +19,13 @@
     "babel-preset-stage-1": "^6.24.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
+    "eslint": "^4.10.0",
+    "eslint-plugin-react": "^7.4.0",
     "mocha": "^4.0.1",
     "webpack": "^3.7.1"
   },
   "dependencies": {
+    "eslint": "^4.10.0",
     "lodash": "^4.17.4"
   }
 }

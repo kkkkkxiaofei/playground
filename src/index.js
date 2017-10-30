@@ -1,2 +1,2 @@
 export const sayHello = () => 'hello'
-console.log(sayHello());
+console.log(sayHello())
