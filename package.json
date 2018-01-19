@@ -9,6 +9,7 @@
   "scripts": {
     "build": "webpack",
     "start": "yarn build && node ./dist/app.js",
+    "start:web": "webpack-dev-server",
     "test": "mocha --compilers js:babel-register --require ./testHelper.js --recursive ./src/tests",
     "lint": "eslint ./src --fix"
   },
@@ -22,10 +23,12 @@
     "eslint": "^4.10.0",
     "eslint-plugin-react": "^7.4.0",
     "mocha": "^4.0.1",
-    "webpack": "^3.7.1"
+    "webpack": "^3.7.1",
+    "webpack-dev-server": "^2.11.0"
   },
   "dependencies": {
     "eslint": "^4.10.0",
+    "html-webpack-plugin": "^2.30.1",
     "lodash": "^4.17.4"
   }
 }
